@@ -1,5 +1,5 @@
 var BimodalLib = artifacts.require("BimodalLib");
 
 module.exports = async function(deployer, network, accounts) {
-  deployer.deploy(BimodalLib);
+  deployer.deploy(BimodalLib, {overwrite: false});
 };

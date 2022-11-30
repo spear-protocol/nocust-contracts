@@ -10,7 +10,7 @@ module.exports = async function(deployer, network, accounts) {
   let hubAccount = accounts[0];
   let blocksPerEon = -1;
   if (network === 'development') {
-    blocksPerEon = 180;
+    blocksPerEon = 10800;
   } else if (network === 'ropsten') {
     blocksPerEon = 180;
   } else if (network === 'live') {
@@ -38,5 +38,5 @@ module.exports = async function(deployer, network, accounts) {
   deployer.deploy(
     NOCUSTCommitChain,
     blocksPerEon,
-    hubAccount);
+    hubAccount, {overwrite: false});
 };
