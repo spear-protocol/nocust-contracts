@@ -10,7 +10,7 @@ module.exports = async function(deployer, network, accounts) {
   let hubAccount = accounts[0];
   let blocksPerEon = -1;
   if (network === 'development') {
-    blocksPerEon = 10800;
+    blocksPerEon = 60;
   } else if (network === 'ropsten') {
     blocksPerEon = 180;
   } else if (network === 'live') {
