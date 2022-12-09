@@ -2,17 +2,18 @@ module.exports = {
   networks: {
     development: {
       host: "localhost",
+      //host: "http://aegis-hub.spear.technology",
       port: 7545,
       network_id: "*" // Match any network id
     },
     ropsten: {
       host: "localhost",
-      port: 8545,
+      port: 7545,
       network_id: 3
     },
     live: {
       host: "localhost",
-      port: 8545,
+      port: 7545,
       network_id: 1
     }
   },
